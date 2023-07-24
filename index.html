@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+    <script src="index.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="logo">
+        <div class="logo_background">
+            <img src="\images\odin-lined.png" class="logo_img">
+            <span class="logo_name">ODIN</span>
+        </div>
+            <div class="credits">Photo by Marek Piwnicki on Unsplash</div>
+    </div>
+    <div class="form">
+        <p>This is not a real form! Sign up now! </p>
+        <form onSubmit="return checkPassword(this)" method="get">
+            <h2>Let's sign up now :</h2>
+            <div class="formContent">
+                <div class="column">
+                    <div class="fill">
+                        <label for="firstName">First Name :</label>
+                        <input type="text" name="firstName" id="firstName">
+                    </div>
+                    <div class="fill">
+                        <label for="phone">Phone :</label>
+                        <input type="tel" name="phone" id="phone" maxlength="10">
+                    </div>
+                    <div class="fill">
+                        <label for="password">Password :</label>
+                        <input type="password" name="password" id="password" 
+                        minlength="8" required>
+                    </div>
+                    
+                </div>
+                <div class="column">
+                    <div class="fill">
+                        <label for="lastName">Last Name :</label>
+                        <input type="text" name="lastName" id="lastName">
+                    </div>
+                    <div class="fill">
+                        <label for="email">Email :</label>
+                        <input type="email" name="Email" id="email" placeholder='david@example.com'>
+                    </div>
+                    <div class="fill">
+                        <label for="confirmPassword">Confirm Password :</label>
+                        <input type="password" name="confirmPassword" id="confirmPassword" 
+                        minlength="8"  required>
+                    </div>
+                </div>
+            </div>
+            <div><input type="submit" value="Create Account" /></div>
+        </form>
+        
+        <p>Already have an account? <a href="">Log In</a></p>
+    </div>   
+</body>
+</html>

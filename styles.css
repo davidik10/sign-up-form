@@ -1,0 +1,142 @@
+body {
+    display: flex;
+    gap: 50px;
+    
+}
+
+.logo {
+    width: 40vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+    /* padding-left: 100px; */
+    background-image: url(/images/background.jpg);
+    background-size: cover;
+}
+
+.logo_background {
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background-image: linear-gradient(to right, rgba(108, 100, 128, 0.2),rgba(108, 100, 128, 0.1));
+    gap: 10px;
+}
+
+.logo_name {
+    font-family: 'Lora', serif;
+    color: bisque;
+    font-size: 50px;
+}
+
+.logo_img {
+    width:100px;
+    height:100px;
+}
+
+.credits {
+    align-self:flex-end;
+    position: absolute;
+    color: bisque;
+}
+
+.form {
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50vw;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 500px;
+    height: 300px;
+    border: solid 1px blue;
+    border-radius: 20px;
+    position: relative;
+    background-color: beige;
+}
+
+.formContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: blueviolet;
+    margin-top: 50px;
+}
+
+.form>p {
+    font-family: 'Lora', serif;
+    font-size: 20px;
+    color: blueviolet;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:20px;
+}
+
+.fill {
+    display: flex;
+    flex-direction: column;
+    margin-right: 40px;
+}
+
+input {
+    appearance: none;
+    border-color:rgb(198, 195, 195);
+    border-radius: 20px;
+    margin-top: 5px;
+}
+
+input:focus {
+    border-color: blueviolet;
+    box-shadow: rgb(0, 0, 0) 2px 1px;
+}
+
+input:invalid {
+    border-color: red
+}
+
+
+h2 {
+    position: absolute;
+    color: rgb(143, 127, 224);
+    left: 30px;
+    top: 0;
+}
+
+input[type="submit"] {
+    appearance: none;
+    width: 200px;
+    height: 50px;
+    background-color: rgb(143, 127, 224);
+    color: #ffffff;
+    font-size: 20px;
+    font-family: 'Lora', serif;
+    border-radius: 10px;
+    position: relative;
+    top: 170px;
+    right:170px;
+}
+
+.form>:last-child {
+    position: relative;
+    top: 120px;
+    left: 5px;
+    
+}
+
+a {
+    text-decoration: none;
+    color: rgb(0, 136, 255);
+}
